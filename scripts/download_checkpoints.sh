@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+mkdir checkpoints-release
+
 # BaseModel -- Pretrained on Conceptual Captions and VQA  
 wget https://s3.amazonaws.com/visdial-bert/checkpoints/bestmodel_no_dense_finetuning -O checkpoints-release/basemodel
 
