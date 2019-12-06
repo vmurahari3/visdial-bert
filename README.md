@@ -2,7 +2,7 @@
 
 PyTorch implementation for the paper:
 
-**[Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline]()**  
+**[Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline](https://arxiv.org/abs/1912.02379)**  
 Vishvak Murahari, Dhruv Batra, Devi Parikh, Abhishek Das  
 
 Prior work in visual dialog has focused on training deep neural models on the VisDial dataset in isolation, which has led to great progress, but is limiting and wasteful. In this work, following recent trends in representation learning for language, we introduce an approach to leverage pretraining on related large-scale vision-language datasets before transferring to visual dialog. Specifically, we adapt the recently proposed [ViLBERT][vilbert] model for multi-turn visually-grounded conversation sequences. Our model is pretrained on the Conceptual Captions and Visual Question Answering datasets, and finetuned on VisDial with a VisDial-specific input representation and the masked language modeling and next sentence prediction objectives (as in BERT). Our best single model achieves state-of-the-art on Visual Dialog, outperforming prior published work (including model ensembles) by more than 1% absolute on NDCG and MRR.
@@ -17,7 +17,7 @@ If you find this work useful in your research, please cite:
 @article{visdial_bert
   title={Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline},
   author={Vishvak Murahari and Dhruv Batra and Devi Parikh and Abhishek Das},
-  journal={arXiv preprint arXiv:1912},
+  journal={arXiv preprint arXiv:1912.02379},
   year={2019},
 }
 ```
