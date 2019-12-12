@@ -301,6 +301,7 @@ if __name__ == '__main__':
             assert len(pretrained_dict.keys()) > 0
             model_dict.update(pretrained_dict)
             dialog_encoder.load_state_dict(model_dict)
+            del pretrained_dict, model_dict \
 
         else:
             model_dict = dialog_encoder.state_dict()
