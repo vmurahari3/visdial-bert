@@ -1455,8 +1455,6 @@ class BertForMultiModalPreTraining(BertPreTrainedModel):
         image_loc,
         sep_indices=None,
         sep_len=None,
-        round_embedding_coeff=0.05,
-        use_round_embedding=False,
         token_type_ids=None,
         attention_mask=None,
         image_attention_mask=None,
