@@ -98,15 +98,6 @@ The below code snippet generates a prediction file which can be submitted to the
 python evaluate.py -n_gpus 8 -start_path <path to model> -save_name <name of model>
 ```
 
-The metrics for the pretrained checkpoints should match with the numbers mentioned in the paper. However, we mention them below too. These results are on v1.0 test-std.
-
-| Checkpoint                             | Mean  Rank | MRR   | R1    | R5    | R10   | NDCG  |
-|:--------------------------------------:|:----------:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| basemodel                |   3.32    | 67.50 | 53.85 | 84.68 | 93.25  |63.87|
-| basemodel + dense        |   6.28    | 50.74 | 37.95 | 64.13 | 80.00 | 74.47 |
-| basemodel + dense + nsp  |   4.28    | 63.92 | 50.78 | 79.53 | 89.60 | 68.08 |
-
-
 #### Logging
 
 We use [Visdom](https://github.com/facebookresearch/visdom) for all logging. Specify `visdom_server`, `visdom_port` and `enable_visdom` arguments in options.py to use this feature. 
