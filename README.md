@@ -7,7 +7,7 @@ Vishvak Murahari, Dhruv Batra, Devi Parikh, Abhishek Das
 
 Prior work in visual dialog has focused on training deep neural models on the VisDial dataset in isolation, which has led to great progress, but is limiting and wasteful. In this work, following recent trends in representation learning for language, we introduce an approach to leverage pretraining on related large-scale vision-language datasets before transferring to visual dialog. Specifically, we adapt the recently proposed [ViLBERT][vilbert] model for multi-turn visually-grounded conversation sequences. Our model is pretrained on the Conceptual Captions and Visual Question Answering datasets, and finetuned on VisDial with a VisDial-specific input representation and the masked language modeling and next sentence prediction objectives (as in BERT). Our best single model achieves state-of-the-art on Visual Dialog, outperforming prior published work (including model ensembles) by more than 1% absolute on NDCG and MRR.
 
-![models](images/teaser.jpg)
+![models](images/teaser.png)
 
 This repository contains code for reproducing results with and without finetuning on dense annotations. All results are on [v1.0 of the Visual Dialog dataset][visdial-data]. We provide pretrained model weights and associated configs to run inference or train these models from scratch.
 
